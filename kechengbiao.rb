@@ -1,16 +1,14 @@
 #! /usr/bin/env ruby
 require 'net/http'
 require 'nokogiri'
+require 'writeexcel'
+
 
 class KC
   attr_reader :res, :schedule
 
   def initialize id, psw
     @id, @psw = id, psw
-    @schedule = []
-    7.times {|i|
-      @schedule[i] = []
-    }
   end
 
 
@@ -37,6 +35,9 @@ class KC
 
   def generate
     start if not @res
+    @schedule = []
+    7.times {|i|  @schedule[i] = []}
+
     table = Nokogiri::HTML(@res.body).css('table')[1]
     table.css('tr').each_with_index do |e,i|
       next if i == 0
@@ -52,6 +53,20 @@ class KC
         end
       end
     end
+    'ok'
+  end
+
+  def generate_excel
+    generate if not @schedule
+    book = WriteExcel.new 'schedule.xls'
+    s = book.add_worksheet
+    @schedule[0..4].each_with_index do |c, i|
+      s.write(0,i,i+1)
+      c.each_with_index { |a_class, j|
+        s.write(j+1, i, a_class)
+      }
+    end
+    book.close
     'ok'
   end
 end
