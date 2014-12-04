@@ -35,9 +35,8 @@ class KC
 
   def generate
     start if not @res
-    @schedule = []
-    7.times {|i|  @schedule[i] = []}
-
+    @schedule = Array.new(7)  { Array.new } 
+    
     table = Nokogiri::HTML(@res.body).css('table')[1]
     table.css('tr').each_with_index do |e,i|
       next if i == 0
