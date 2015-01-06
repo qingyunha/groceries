@@ -9,3 +9,5 @@ serve.rb : a simple HTTP handler, only use TCP socket
 ip.rb : scan ip adress through www.ip.cn once per hour
 
 guesspw.rb : guess student passwd [AAAAAA]-[ZZZZZZ]
+
+play.rb: play mp3 along whit lrc
