@@ -11,3 +11,6 @@ ip.rb : scan ip adress through www.ip.cn once per hour
 guesspw.rb : guess student passwd [AAAAAA]-[ZZZZZZ]
 
 play.rb: play mp3 along whit lrc
+
+cleanup.rb: Clean up all old versions of installed gems in the local repository
+
