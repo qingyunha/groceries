@@ -14,3 +14,4 @@ play.rb: play mp3 along whit lrc
 
 cleanup.rb: Clean up all old versions of installed gems in the local repository
 
+jade.js video.js: 为方便看6.041的课程做的HTML5视频播放器
