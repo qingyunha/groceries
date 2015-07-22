@@ -17,3 +17,5 @@ cleanup.rb: Clean up all old versions of installed gems in the local repository
 jade.js video.js: 为方便看6.041的课程做的HTML5视频播放器
 
 proxy.js: a simple http proxy
+
+proxy-https: 使用CONNECT tunnel的https的代理服务器
