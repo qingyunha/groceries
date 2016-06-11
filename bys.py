@@ -104,24 +104,6 @@ def mult_do():
     p.map(main, range(1,13))
 
 
-'<input name="TB_xm" type="text" value="郭晓南" readonly="readonly" id="TB_xm">'
-'<input name="TB_xb" type="text" value="女" readonly="readonly" id="TB_xb">'
-'<input name="TB_mz" type="text" value="汉族" readonly="readonly" id="TB_mz">'
-'<input name="TB_csny" type="text" value="1992年05月" readonly="readonly" id="TB_csny">'
-'<input name="TB_syd" type="text" value="河北省鸡泽县" maxlength="6" readonly="readonly" id="TB_syd" title="请在个人信息里修改">'
-'<input name="TB_xl" type="text" value="本科" readonly="readonly" id="TB_xl">'
-'<input name="TB_xz" type="text" value="4" readonly="readonly" id="TB_xz">'
-'<input name="TB_sg" type="text" value="162" readonly="readonly" id="TB_sg">'
-'<input name="TB_zy" type="text" value="车辆工程" readonly="readonly" id="TB_zy">'
-'<input name="TB_tz" type="text" value="53" readonly="readonly" id="TB_tz">'
-'<input name="TB_dzxx" type="text" value="1627411007@qq.com" readonly="readonly" id="TB_dzxx">'
-'<input name="TB_lxdh" type="text" value="18334792284" readonly="readonly" id="TB_lxdh">'
-'<input name="TB_sjhm" type="text" value="18334792284" id="TB_sjhm" wreadonly="True">'
-'<input name="TB_lxdz" type="text" value="河北省邯郸市鸡泽县店上乡西柳营村" readonly="readonly" id="TB_lxdz">'
-
-
-
-
 def get_ID(file_name):
     #f = open("E:/jee/1201014101_ID.html")
     f = open(file_name)
